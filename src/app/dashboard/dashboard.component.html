@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container body">
   <div class="row text-center">
     <h2>Just a demo on how to display all subjects</h2>
     <div class="col-md-3">
@@ -10,20 +10,41 @@
   <br>
   <br>
   <div class="row">
-    <div class="card" style="min-height:300px;">
-      <div class="card-block">
-          
-          <div class="mask flex-center rgba-black-strong">
-              <p *ngFor="let nt of notes">{{nt.title}}</p>
-              
-          </div>
-          
-          <div class="card-text">
-              
-          </div>
-          <br>
-         
+    <div class="col-md-4">
+      <div class="card" style="min-height:300px;">
+        <div class="card-block">
+            
+            <div class="mask flex-center rgba-black-strong">
+                <p *ngFor="let nt of notes">{{nt.title}}</p>
+                
+            </div>
+            
+            <div class="card-text">
+                
+            </div>
+            <br>
+           
+        </div>
       </div>
-  </div>
+    
+    </div>
+    <div class="col-md-4">
+      <div class="card" style="min-height:300px;">
+        <div class="card-block">
+            
+            <div class="mask flex-center rgba-black-strong">
+                <p *ngFor="let nt of notes">{{nt.description}}</p>
+                
+            </div>
+            
+            <div class="card-text">
+                
+            </div>
+            <br>
+           
+        </div>
+      </div>
+    </div>
+    
   </div>
 </div>
