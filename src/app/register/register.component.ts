@@ -12,6 +12,8 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  showSuccessMessage = false;
+
   // create a new user
   onSubmit(form: NgForm) {
     const username = form.value.username;
@@ -29,6 +31,7 @@ export class RegisterComponent implements OnInit {
       .createUser(username, email, password)
       .subscribe((response) => {
         console.log(response);
+        this.showSuccessMessage = true;
       });
 
     form.reset();
