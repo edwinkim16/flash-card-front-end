@@ -18,4 +18,8 @@ export class ResponseDataService {
   getSubjects() {
     return this.http.get(this.url + 'subjects/');
   }
+  //get all notes
+  getNotes(){
+    return this.http.get(this.url + 'notes/');
+  }
 }
