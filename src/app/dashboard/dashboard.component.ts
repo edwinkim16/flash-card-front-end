@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Output, EventEmitter} from '@angular/core';
 import { ResponseDataService } from '../services/response-data.service';
 
 @Component({
@@ -10,6 +10,12 @@ export class DashboardComponent implements OnInit {
   subjecs;
   notes;
   nots!: any[];
+  // newNote = new ;
+  // @Output() addNote = new EventEmitter<Goal>();
+
+ //   submitNote(){
+ // this.addNote.emit(this.newNote);
+ //   }
 
   constructor(private responseService: ResponseDataService) {}
 
