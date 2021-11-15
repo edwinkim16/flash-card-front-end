@@ -11,6 +11,7 @@ export class UserAuthService {
   url = 'http://flash-cards-rest-api.herokuapp.com/api/';
 
   token = '1eef31a091e8582786d3ab68db0e7104d0ad2530';
+  edu='e88ee03fb306c1e1f4757465bc514e77de1f740c'
 
   // create new user
   createUser(username: string, email: string, password: string) {
